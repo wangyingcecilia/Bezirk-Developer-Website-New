@@ -85,36 +85,13 @@
             </div>
         </div>
 
-        <div style="background-color:#3C474D; padding-right:20%" id = 'bulb' class="col s12 m6">
+        <div style="padding:0; height:300px; background-color: #3c474d" class="col s12 m6 ">
             <div class="container2">
-            <script>
-                $(function () {
-                    var body = $('#bulb');
-                    var lightbulb = ['url(image/off.png)', 'url(image/on.png)'];
-                    var current = 0;
-
-                    function nextLight() {
-                        body.css(
-                                {"background": lightbulb[current = ++current % lightbulb.length],
-                                    "background-repeat":"no-repeat",
-                                    "background-color":"#3C474D"
-                                }
-                    );
-
-
-                    }
-
-                    setTimeout(nextLight, 8200);
-                    body.css('background', lightbulb[0]);
-                });
-
-                $(document).ready(function(){
-                    $("#bulb").css({"max-height":"300px","background-repeat":"no-repeat","background-color":"#3C474D"});
-                });
-
-            </script>
-                </div>
+               <img id="light" style="max-height:300px; width:100%; max-width:700px; float:left" src="image/light.gif">
+            </div>
         </div>
+
+
     </div>
 
 </div>
@@ -130,7 +107,7 @@
 
             <div class="row">
                 <div class="col s12 m12 l4">
-                    <div class="card darken-1" style="background-color:#14A6C7; min-height:350px;">
+                    <div class="card small darken-1" style="background-color:#14A6C7; min-height:350px;">
                         <div style="min-height: 300px" class="card-content white-text">
                             <h5>Create your<br><b>IoT Application</b></h5>
                             <p><br>Use Bezirk to integrate multiple devices and realize your IoT Vision.<br><br><br><br><br>
@@ -143,7 +120,7 @@
 
 
                 <div class="col s12 m12 l4">
-                    <div class="card darken-1" style="background-color:#7B8796; min-height:350px;">
+                    <div class="card small darken-1" style="background-color:#7B8796; min-height:350px;">
                         <div style="min-height: 300px" class="card-content white-text">
                             <h5>Contribute a new<br><b>Hardware Adapter</b></h5>
                             <p><br>Write a hardware adapter to help Bezirk interact with a new piece of
@@ -156,7 +133,7 @@
                 </div>
 
                 <div class="col s12 m12 l4">
-                    <div class="card darken-1" style="background-color:#A6B6C6; min-height:350px;">
+                    <div class="card small darken-1" style="background-color:#A6B6C6; min-height:350px;">
                         <div style="min-height: 300px" class="card-content white-text">
                             <h5>Contribute to<br><b>Bezirk Middleware</b></h5>
                             <p><br>Support Bezirk by fixing bugs, improving documentation, or suggesting new

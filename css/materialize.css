@@ -3431,6 +3431,14 @@ input[type=range] + .thumb {
 
 }
 
+
+@media only screen and (min-width: 1600px) {
+  img.light {
+    width: 840px;
+    height:300px;
+  }
+}
+
 @media only screen and (min-width: 993px) {
   .container {
     width: 70%;
@@ -3442,8 +3450,9 @@ input[type=range] + .thumb {
   }
   .container2 {
     width: 80%;
-    margin-right:0%;
-    margin-left:20%;
+    margin-right:20%;
+    margin-left:0%;
+    background-color:#3c474d;
   }
 }
 
@@ -4595,7 +4604,7 @@ small {
 }
 
 .card.medium {
-  height: 400px;
+  min-height: 450px;
 }
 
 .card.large {
