@@ -33,6 +33,13 @@ p {
     width: 100%;
 }
 
+@media only screen and (min-width : 992px) {
+    span#typed {
+        font-size: 1rem;
+    }
+
+}
+
 
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
@@ -48,6 +55,22 @@ p {
         line-height: 0;
         height: inherit;
     }
+
+    span#typed {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width : 830px) {
+    span#typed {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width : 740px) {
+    span#typed {
+        font-size: .65rem;
+    }
 }
 
 @media only screen and (max-width : 600px) {
@@ -61,6 +84,15 @@ p {
     }
     img.hidden {
         display:none;
+    }
+    span#typed {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    span#typed {
+        font-size: .7rem;
     }
 }
 
